@@ -4,7 +4,7 @@ import MovieListItem from "./MovieListItem";
 import MovieListFooter from "./MovieListFooter";
 
 const MovieList = (props) => {
-  const movies = useSelector((state) => state.movies);
+  const movies = useSelector((state) => state.moviesState.movies);
   // const movies = [];
 
   return (

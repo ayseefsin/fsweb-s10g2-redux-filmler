@@ -9,7 +9,7 @@ const Movie = (props) => {
   const dispatch = useDispatch();
 
   // const movies = [];
-  const movies = useSelector((state) => state.movies);
+  const movies = useSelector((state) => state.moviesState.movies);
   const movie = movies.find((movie) => movie.id === Number(id));
   const deleteHandler = () => {
     dispatch(deleteMovie(id));
